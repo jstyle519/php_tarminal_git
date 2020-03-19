@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>tarminal</title>
+</head>
+   <body>
+     <h1>課題</h1>
+     
+    <ol>
+        <li>lsコマンド</li>
+        <h2>git ls-files</h2>
+        <p>リポジトリ内のファイルをリスト表示</p>
+        <h2>git ls-files -c</h2>
+        <p>インデックにキャッシュされているファイルを表示</p>
+        <h2>git ls-files -m</h2>
+        <p>更新されたファイルを表示</p>
+        <h2>git ls-files -s</h2>
+        <p>インデックスのオブジェクト名、mode bits,stage number表示</p>
+        <h2>git ls-files -o</h2>
+        <p>マージされていないファイルの一覧を表示</p>
+        <h2>git ls-files　-u</h2>
+        <p>リポジトリ内のファイルをリスト表示</p>
+        <h2>git ls-files --exclude-standard -o</h2>
+        <p>.gitignoreにマッチするファイルを含めた追跡されていないファイルの一覧が表示</p>
+        <h2>git ls-files -v</h2>
+        <p>git管理下で無視したファイル(assume-unchanged,skip-workree)を確認する</p>
+        <h2>git stash list</h2>
+        <p>スタッシュに対比させたWIPのリスト表示</p>
+        <h2>git config --local --list</h2>
+        <p>ローカル（リポジトリ固有の）Git構成をリスト表示</p>
+        <h2>git config --global --list</h2>
+        <p>グローバル（ユーザ固有の）Git構成をリスト表示</p>
+        <h2>git config --system --list</h2>
+        <p>システム（サーバー全体の）Git構成をリスト表示</p>
+        
+        <li>echo役割・使い方</li>
+        <h2>画面に文字列を表示する</h2>
+        <p>$ echo 表示するもの</p>
+        <h2>変数を表示する</h2>
+        <p>$ echo $変数名</p>
+        <h2>変数と文字列を同時に表示する</h2>
+        <p>$echo weight $a g</p>
+        <h2>変数を複数表示する</h2>
+        <p>$menu=coffee $price=500 $echo order:$menu price:$price Yen</p>
+        <h2>計算値を表示する</h2>
+        <p>$n=5 $echo Menu:$menu Number:$n price:'expr $price\* $n` Yen</p>
+        <h2>-eオプション：改行を表示する</h2>
+        <p>$echo -e １行目\\n２行目\\n3行目 \\n4行目</p>
+        <h2>-nオプション：出力文字の最後の改行をしない</h2>
+        <p>$echo -n 出力文字</p>
+        <h2>出力を画面ではなくファイルに出力する・新規作成したファイルに出力する</h2>
+        <p>$echo 文字列＞ファイル名</p>
+        <p>$echo "h1{font-size:20px}"> style.css</p>
+        <h2>シングルクォーテーション『’』の場合</h2>
+        <p>中は全て文字列であると解釈される。</p>
+        <h2>ダブルクォーテーション『”』の場合</h2>
+        <p>変数が展開されて表示される</p>
+        <h2>バッククォーテーション『`』の場合</h2>
+        <p>引用府内をコマンドであるとみなして、その実行結果と置き換える</p>
+        
+        <li>catコマンド役割と使い方</li>
+        <h2>ファイルの閲覧</h2>
+        <p>$cat file名</p>
+        <h2>リダイレクト『＞』を用いることで、別のファイルに出力内容を記述することができる</h2>
+        <p>$cat fileA > fileB</p>
+        <h2>上書きでなく、追加がしたければリダイレクト『>>』を使用する</h2>
+        <p>$cat fileA >> fileB</p>
+        <h2>catコマンドによるファイルの結合</h2>
+        <p>catにはもともと「ファイルを連結して標準出力に出力する」というコマンド本来の意味合いがある。cat自体が、「連結する」を意味するconcatnateの略である。</p>
+        <p>$ cat fileC fileD</p>
+        <h2>「cat -n ファイル名」により、行番号をつけて出力する。これは使うことが多いオプションなので覚えてしまおう。"number"のn</h2>
+        <p>$ cat -n fileB</p>
+        <h2>blankなし（空白行を入れずに）番号をつけて表示するオプション。"blank"のbで覚える。</h2>
+        <p>$ cat -b fileB</p>
+        <h2>連続した空白行を１行の空白行にまとめるオプション</h2>
+        <p>$ cat -s fileB</p>
+        <h2>各行の最後に"$"を表示するオプション</h2>
+        <p>$ cat -E fileB</p>
+    </ol>    
+   </body>
+    
+    
+</html>
